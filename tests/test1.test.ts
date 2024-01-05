@@ -22,10 +22,12 @@ beforeAll(async () => {
 
 test("registration", async () => {
    await etsyPage.clickSignIn();
+   await driver.sleep(3000);
    await etsyPage.clickRegister();
    await etsyPage.enterEmail();
    await etsyPage.enterName();
    await etsyPage.enterPassword();
+   await etsyPage.submitReg();
 },30000);
 
 

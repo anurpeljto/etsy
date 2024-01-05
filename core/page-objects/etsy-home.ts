@@ -43,4 +43,8 @@ export class EtsyHome extends BasePage {
         await this.fillInputField(this.password, testData.user.password);
     }
 
+    async submitReg(){
+        await this.findAndClick(this.submit);
+    }
+
 }
