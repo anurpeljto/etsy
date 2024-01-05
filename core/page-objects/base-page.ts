@@ -36,5 +36,14 @@ async scrollToElement(element: WebElement): Promise<void> {
         await this.driver.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
+    async fillInputField(inputField: By, text: string) {
+        await (await this.driver.findElement(inputField)).sendKeys(text);
+    }
+
+    async findAndClick(selector: By){
+        const element = this.driver.findElement(selector);
+        await element.click();
+    }
+
 
 }

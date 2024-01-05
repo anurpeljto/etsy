@@ -1,5 +1,11 @@
 {
     "url": {
-        "some_name": "link"
+        "etsy": "https://www.etsy.com/"
+    },
+
+    "user": {
+        "username": "kan",
+        "password": "burch1122!",
+        "email": "kan@gracioso.com"
     }
 }
